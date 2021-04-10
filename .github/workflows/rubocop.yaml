@@ -1,8 +1,12 @@
 name: RuboCop
 
 on:
-  - push
-  - pull_request
+  pull_request: {}
+  push:
+    branch:
+      - master
+  schedule:
+    - cron: '0 0 * * 0' # 0:00 UTC on every sunday
 
 jobs:
   rubocop:
