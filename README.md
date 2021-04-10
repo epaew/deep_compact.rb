@@ -1,4 +1,6 @@
 # deep_compact.rb
+[![Gem Version](https://badge.fury.io/rb/deep_compact.svg)](https://badge.fury.io/rb/deep_compact)
+
 Define `Array#deep_compact` and `Hash#deep_compact` which apply `#compact` recursively.
 
 ## Requirements
