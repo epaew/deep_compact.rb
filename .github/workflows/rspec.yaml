@@ -3,7 +3,7 @@ name: RSpec
 on:
   pull_request: {}
   push:
-    branch:
+    branches:
       - master
   schedule:
     - cron: '0 0 * * 0' # 0:00 UTC on every sunday
