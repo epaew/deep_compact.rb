@@ -1,5 +1,8 @@
 # deep_compact.rb
 [![Gem Version](https://badge.fury.io/rb/deep_compact.svg)](https://badge.fury.io/rb/deep_compact)
+[![Build Status](https://github.com/epaew/deep_compact.rb/actions/workflows/rspec.yaml/badge.svg?branch=master&event=push)](https://github.com/epaew/deep_compact.rb/actions/workflows/rspec.yaml)
+[![Maintainability](https://api.codeclimate.com/v1/badges/6d9d408e778dd4e24d2b/maintainability)](https://codeclimate.com/github/epaew/deep_compact.rb/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/6d9d408e778dd4e24d2b/test_coverage)](https://codeclimate.com/github/epaew/deep_compact.rb/test_coverage)
 
 Define `Array#deep_compact` and `Hash#deep_compact` which apply `#compact` recursively.
 
