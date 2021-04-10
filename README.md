@@ -1,8 +1,8 @@
-# DeepCompact
+# deep_compact.rb
+Define `Array#deep_compact` and `Hash#deep_compact` which apply `#compact` recursively.
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/deep_compact`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+## Requirements
+Ruby: 2.6 or higher
 
 ## Installation
 
@@ -21,8 +21,17 @@ Or install it yourself as:
     $ gem install deep_compact
 
 ## Usage
+```ruby
+require 'deep_compact'
 
-TODO: Write usage instructions here
+using DeepCompact
+
+array = [nil, :a, { a: :a, nil: nil }]
+pp array.deep_compact #=> [:a, {:a=>:a}]
+
+hash = { a: :a, nil: nil, array: [nil, :a], hash: { a: :a, nil: nil } }
+pp hash.deep_compact #=> {:a=>:a, :array=>[:a], :hash=>{:a=>:a}}
+```
 
 ## Development
 
@@ -32,8 +41,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/deep_compact.
-
+Bug reports and pull requests are welcome on GitHub at https://github.com/epaew/deep_compact.
 
 ## License
 
