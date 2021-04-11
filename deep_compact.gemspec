@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
 
   spec.summary       = 'Define `Array#deep_compact` and `Hash#deep_compact` which apply `#compact` recursively.'
   spec.description   = spec.summary
-  spec.homepage      = 'https://epaew.github.io/deep_compact'
+  spec.homepage      = 'https://github.com/epaew/deep_compact.rb'
   spec.license       = 'MIT'
   spec.required_ruby_version = Gem::Requirement.new('>= 2.6.0')
 
