@@ -16,18 +16,18 @@ jobs:
       fail-fast: false
       matrix:
         ruby_version:
-          - 2.6
-          - 2.7
-          - 3.0
-          - 3.1
+          - '2.6'
+          - '2.7'
+          - '3.0'
+          - '3.1'
     steps:
-    - uses: actions/checkout@v3.1.0
+    - uses: actions/checkout@v3
     - uses: ruby/setup-ruby@v1
       with:
         ruby-version: ${{ matrix.ruby_version }}
         bundler-cache: true
 
-    - uses: paambaati/codeclimate-action@v3.1.0
+    - uses: paambaati/codeclimate-action@v3.2.0
       env:
         CC_TEST_REPORTER_ID: b5cd4fd6161b3e9c4605946dfffb596bdf95ed086e9a6b9e63e34c8e4a89d2bd
       with:
