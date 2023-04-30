@@ -5,8 +5,6 @@ on:
   push:
     branches:
       - master
-  schedule:
-    - cron: '0 0 * * 0' # 0:00 UTC on every sunday
 
 jobs:
   rubocop:
